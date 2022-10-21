@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Prepara</title>
+    </head>
+    <body>
+
+        <div>
+            <form method="get">
+                <h2>LOGIN</h2>
+                <label for="username"></label><br>
+                <input type="text" id="username" name="username" placeholder="Usuário"> <br>
+                <label for="pwd"></label><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Senha">
+                <br></br>
+                <input type="checkbox"> Lembrar-me </input>
+                <button type="submit" id="inputButton"><a href="testano.html">Enviar</a></button>   
+                <br>
+                <br>
+            </form>
+        </div>
+        <script>
+            var btn = document.querySelector("#inputButton");
+    
+            btn.addEventListener("click", function () {
+                var username = document.querySelector("#username").value;
+                localStorage.setItem('valueText', username);
+                var pwd = document.querySelector("#pwd").value;
+                localStorage.setItem('valueTexto', pwd);
+ 
+            })
+        </script>
+
+ 
+            })
+        </script>
+
+
+        
+    </body>
+</html>
